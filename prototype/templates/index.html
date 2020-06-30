@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hell o, world!</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/prototype.css') }}">
+    <title>Title</title>
 </head>
 <body>
-    <h1>Hell o, world!</h1>
-    <script src="{{ url_for('static', filename='js/prototype.js') }}"></script>
+
+    <div>
+
+        여기는 html영역입니다.
+
+        <a href="/about">어바웃페이지로 이동</a>
+
+    </div>
+
+    <ul>
+        {% for i in list %}
+            <li>{{i}}</li>
+        {% endfor %}
+
+    </ul>
+
+
+
 </body>
 </html>
